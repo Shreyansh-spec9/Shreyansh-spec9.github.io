@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate | [ORGANIZATION NAME]</title>
+<meta name="description" content="Humanitarian relief campaign website for Nepal flood relief and Gaza / Palestine humanitarian support.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">[ORGANIZATION <span>NAME</span>]</a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="nepal.html">Nepal</a>
+      <a href="gaza.html">Gaza / Palestine</a>
+      <a href="transparency.html">Transparency</a>
+      <a href="updates.html">Updates</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-primary" href="donate.html">Donate</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="page-hero">
+  <div class="container">
+    <div class="kicker">Donate</div>
+    <h1>Choose where your contribution goes.</h1>
+    <p class="lead">This version intentionally uses a placeholder payment step. Connect your organization's verified payment processor only after legal, banking and compliance checks are complete.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container grid-2">
+    <div class="card">
+      <form class="form" onsubmit="event.preventDefault(); alert('Demo only. Connect your verified payment gateway before accepting real donations.');">
+        <div>
+          <label for="campaign">Campaign</label>
+          <select id="campaign"><option>Nepal Flood Relief</option><option>Gaza / Palestine</option><option>Both (only if legally/operationally appropriate)</option></select>
+        </div>
+        <div>
+          <label for="amount">Donation amount (₹)</label>
+          <input id="amount" type="number" min="1" placeholder="500">
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px">
+          <button type="button" class="btn btn-soft" onclick="amount.value=100">₹100</button>
+          <button type="button" class="btn btn-soft" onclick="amount.value=250">₹250</button>
+          <button type="button" class="btn btn-soft" onclick="amount.value=500">₹500</button>
+          <button type="button" class="btn btn-soft" onclick="amount.value=1000">₹1k</button>
+          <button type="button" class="btn btn-soft" onclick="amount.value=2500">₹2.5k</button>
+        </div>
+        <div><label for="name">Name (optional)</label><input id="name" placeholder="Your name"></div>
+        <div><label for="email">Email</label><input id="email" type="email" placeholder="you@example.com"></div>
+        <button class="btn btn-primary" type="submit">Continue to payment</button>
+        <p class="small">Demo button only. No real payment is processed by this static version.</p>
+      </form>
+    </div>
+    <div>
+      <div class="card">
+        <h3>Before donating</h3>
+        <p>Read the campaign page and transparency information. Use only the organization's verified payment method.</p>
+        <a href="transparency.html" class="btn btn-soft">View transparency</a>
+      </div>
+      <div class="card" style="margin-top:15px">
+        <h3>Donation receipt</h3>
+        <p>When real payments are connected, add a proper server-side receipt flow and clear information about donor data, refunds/cancellations, and applicable tax treatment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">[ORGANIZATION <span>NAME</span>]</div>
+      <p class="small">Humanitarian relief campaign website. Replace all bracketed placeholders with verified organizational information before publishing.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <p><a href="nepal.html">Nepal Flood Relief</a><br><a href="gaza.html">Gaza / Palestine</a><br><a href="transparency.html">Transparency</a><br><a href="updates.html">Updates</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p class="small">[OFFICIAL EMAIL]<br>[OFFICIAL PHONE]<br>[OFFICIAL ADDRESS]</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
